@@ -1,0 +1,24 @@
+.mainBody {
+  margin: auto;
+  padding: 30px;
+}
+.youtubeVideo { 
+  padding: 10px;
+}
+.introClass {
+  width: 100%;
+}
+.card-pricing {
+  background-color: red;
+}
+.btnContainer {
+  margin-right: 50px;
+}
+
+.introClass {
+  margin-left: 50px;
+}
+
+.emailDiv {
+  margin-left: 15px;
+}

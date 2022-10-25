@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="">
+
+        <!-- Navbar-->
+        <div class="">
+            <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom container">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse">
+                        <h5 class="text-white">Navbar</h5>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="mainBody">
+            <!-- Buttons-->
+            <div class="buttonCointainer container-fluid mt--6 d-flex flex-row-reverse mt-2 col-md-12">
+                <div class="btnContainer">
+                    <button type="button" class="btn btn-outline-primary" ui-sref="home.campainsAll"
+                        href="#!/home/allcamp"><i class="fas fa-arrow-back"></i>Dashboard</button>
+                    <button type="button" class="btn btn-danger ng-scope" ng-if="!is_session_verified" ui-sref="login"
+                        href="#!/login"><i class="fas fa-arrow-back"></i>Login Now</button>
+                    <a href="https://pepcorns.com/">
+                        <button type="button" class="btn btn-danger"><i class="fas fa-arrow-back"></i>Back to
+                            Website</button></a>
+                </div>
+            </div>
+
+
+            <div class="introClass d-flex justify-content-start mt-2 col-md-12">
+
+                <div class="MainContainer d-flex">
+                    <div class="imageMainclass">
+                        <img src="https://api.pepcorns.com/clientassets/icon1651230435196.png" alt="" class="ImageClass"
+                            width="60" height="70">
+                    </div>
+
+                    <div class="col-lg-6 emailDiv">
+                        <p class="mb-md-0">
+                            <a href="https://app.pepcorns.com/" class="">Letzrent</a>
+                        </p>
+                        <p class="text-sm text-muted mb-0 ng-binding">Address : Mumbai Maharashtra</p>
+                        <span class="text-success">●</span>
+                        <small class="">EMAIL : | Website : https://letzrent.com | </small>
+                        <small class="">PAN/TAN : AAJCR3294F</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videoCointainer d-flex justify-content-around mt-2 col-md-12">
+
+                <div class="youtubeVideo">
+                    <h5><a href="https://www.youtube.com/watch?v=biGcDeB2PbQ">Unable to view video ? Click here</a></h5>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+
+                <div class="mainCard card card-pricing  border-0  mb-4">
+                    <div class="card-header bg-transparent">
+                        <p class="text-uppercase ls-1 text-primary display-3 ng-binding" style="margin-bottom: 0px;">₹
+                            0</p>
+                        <small class="ng-binding">0 % of minimum
+                            goal raised</small>
+                    </div>
+                    <div class="card-body  text-left">
+                        <div class="display-4 text-black ng-binding">0</div>
+                        <span class=" text-muted">Total Investors</span>
+                        <hr>
+                        <div class="display-4 text-black ng-binding">0 Days</div>
+                        <span class=" text-muted">Left to Invest</span>
+
+
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <button class="btn btn-icon btn-primary btn-block ng-hide" type="button"
+                            ng-hide="!schemeStatus_helper.is_between(selectedCampDetails.start_date,selectedCampDetails.end_date)">
+                            <span class="btn-inner--icon"><i class="ni ni-money-coins"></i></span>
+                            <span class="btn-inner--text" ng-click="gotoPayment(selectedCampDetails.camp_id)">Invest
+                                Now</span>
+                        </button>
+                        <button class="btn btn-icon btn-danger btn-block" type="button"
+                            ng-hide="schemeStatus_helper.is_between(selectedCampDetails.start_date,selectedCampDetails.end_date)">
+                            <span class="btn-inner--icon"><i class="ni ni-money-coins"></i></span>
+                            <span class="btn-inner--text">Campaign Expired</span>
+                        </button>
+                        <div class="text-bold text-center" style="margin-top: 10px;">
+                            <small class="ng-binding">₹ 1000 Minimum Investment
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
